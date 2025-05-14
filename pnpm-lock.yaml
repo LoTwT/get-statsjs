@@ -15,6 +15,9 @@ catalogs:
     '@types/node':
       specifier: ^22.15.17
       version: 22.15.17
+    '@types/stats.js':
+      specifier: ^0.17.4
+      version: 0.17.4
     bumpp:
       specifier: ^10.1.0
       version: 10.1.0
@@ -30,6 +33,9 @@ catalogs:
     simple-git-hooks:
       specifier: ^2.13.0
       version: 2.13.0
+    stats.js:
+      specifier: ^0.17.0
+      version: 0.17.0
     taze:
       specifier: ^19.1.0
       version: 19.1.0
@@ -43,6 +49,10 @@ catalogs:
 importers:
 
   .:
+    dependencies:
+      stats.js:
+        specifier: 'catalog:'
+        version: 0.17.0
     devDependencies:
       '@ayingott/eslint-config':
         specifier: 'catalog:'
@@ -53,6 +63,9 @@ importers:
       '@types/node':
         specifier: 'catalog:'
         version: 22.15.17
+      '@types/stats.js':
+        specifier: 'catalog:'
+        version: 0.17.4
       bumpp:
         specifier: 'catalog:'
         version: 10.1.0
@@ -690,6 +703,9 @@ packages:
 
   '@types/node@22.15.17':
     resolution: {integrity: sha512-wIX2aSZL5FE+MR0JlvF87BNVrtFWf6AE6rxSE9X7OwnVvoyCQjpzSRJ+M87se/4QCkCiebQAqrJ0y6fwIyi7nw==}
+
+  '@types/stats.js@0.17.4':
+    resolution: {integrity: sha512-jIBvWWShCvlBqBNIZt0KAshWpvSjhkwkEu4ZUcASoAvhmrgAUI2t1dXrjSL4xXVLB4FznPrIsX3nKXFl/Dt4vA==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -2662,6 +2678,9 @@ packages:
   stackback@0.0.2:
     resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
 
+  stats.js@0.17.0:
+    resolution: {integrity: sha512-hNKz8phvYLPEcRkeG1rsGmV5ChMjKDAWU7/OJJdDErPBNChQXxCo3WZurGpnWc6gZhAzEPFad1aVgyOANH1sMw==}
+
   statuses@2.0.1:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
@@ -3578,6 +3597,8 @@ snapshots:
   '@types/node@22.15.17':
     dependencies:
       undici-types: 6.21.0
+
+  '@types/stats.js@0.17.4': {}
 
   '@types/unist@3.0.3': {}
 
@@ -5780,6 +5801,8 @@ snapshots:
 
   stackback@0.0.2:
     optional: true
+
+  stats.js@0.17.0: {}
 
   statuses@2.0.1: {}
 

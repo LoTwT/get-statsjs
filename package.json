@@ -44,10 +44,14 @@
     "typecheck": "tsc --noEmit",
     "up": "taze latest -I -f"
   },
+  "dependencies": {
+    "stats.js": "catalog:"
+  },
   "devDependencies": {
     "@ayingott/eslint-config": "catalog:",
     "@ayingott/prettier-config": "catalog:",
     "@types/node": "catalog:",
+    "@types/stats.js": "catalog:",
     "bumpp": "catalog:",
     "eslint": "catalog:",
     "lint-staged": "catalog:",
