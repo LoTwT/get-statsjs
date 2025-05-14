@@ -21,3 +21,5 @@ export function getStatsjs(el?: HTMLElement): GetStatsjsReturnType {
 
   return { stats, mount, dispose }
 }
+
+export { Stats }
