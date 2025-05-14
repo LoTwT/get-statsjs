@@ -1,0 +1,19 @@
+catalog:
+  "@ayingott/eslint-config": ^2.0.3
+  "@ayingott/prettier-config": ^2.1.4
+  "@types/node": ^22.15.17
+  bumpp: ^10.1.0
+  eslint: ^9.26.0
+  lint-staged: ^16.0.0
+  prettier: ^3.5.3
+  simple-git-hooks: ^2.13.0
+  taze: ^19.1.0
+  tsdown: ^0.11.9
+  typescript: ^5.8.3
+
+ignoredBuiltDependencies:
+  - esbuild
+
+onlyBuiltDependencies:
+  - simple-git-hooks
+  - unrs-resolver

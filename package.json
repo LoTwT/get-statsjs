@@ -1,0 +1,70 @@
+{
+  "name": "get-statsjs",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@10.11.0",
+  "description": "get-statsjs",
+  "author": "LoTwT <l709937065@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/LoTwT/get-statsjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LoTwT/get-statsjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LoTwT/get-statsjs/issues"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "lint": "eslint .",
+    "prepare": "simple-git-hooks",
+    "prepublishOnly": "pnpm build",
+    "prettier": "prettier --write .",
+    "release": "bumpp && pnpm publish",
+    "typecheck": "tsc --noEmit",
+    "up": "taze latest -I -f"
+  },
+  "devDependencies": {
+    "@ayingott/eslint-config": "catalog:",
+    "@ayingott/prettier-config": "catalog:",
+    "@types/node": "catalog:",
+    "bumpp": "catalog:",
+    "eslint": "catalog:",
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "simple-git-hooks": "catalog:",
+    "taze": "catalog:",
+    "tsdown": "catalog:",
+    "typescript": "catalog:"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged"
+  },
+  "lint-staged": {
+    "*": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "prettier": "@ayingott/prettier-config"
+}
